@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+hr,
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+.admin {
+    height: 100vh;
+
+
+    .left {
+
+        background-color: palevioletred;
+        color: white;
+
+        header {
+            position: relative;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid white;
+
+            .meta {
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                right: 0;
+                top: 50%;
+                background-color: black;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(50%, -50%);
+            }
+
+
+
+        }
+
+        .bar {}
+
+        .cha1 {
+            h4 {
+                padding: 10px;
+            }
+        }
+
+        .cha2 {}
+
+        li {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &:hover {
+                background-color: black;
+
+            }
+
+        }
+
+    }
+
+
+    .right {
+
+        flex: 1;
+        background-color: blueviolet;
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            border-bottom: 1px solid white;
+            padding: 0 20px;
+
+            .fileone {
+
+
+                display: flex;
+                gap: 15px;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .con {
+                width: 35px;
+                height: 35px;
+
+                img {
+
+                    border-radius: 50%;
+
+                }
+
+                ul {
+                    margin: 0;
+                    background-color: white;
+                    color: black;
+                    right: 0;
+                    padding: 0;
+                    border: 1px solid black;
+
+                    li {
+                        padding: 10px;
+
+                        &:hover {
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+
+
+
+                }
+
+            }
+
+
+
+        }
+
+        .box {
+            .card {
+                .hi {
+
+                    margin: 10px;
+                    position: relative;
+
+                    h6 {
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 50%;
+                    }
+                }
+
+                .card-body {
+                    .bo {
+                        display: flex;
+
+                        justify-content: space-around;
+
+                    }
+
+                    button {
+                        border: none;
+                        height: 40px;
+                        width: 80px;
+                        border-radius: 10px;
+                        background-color: forestgreen;
+                        color: white;
+
+
+                    }
+
+                }
+            }
+        }
+
+        .box1 {
+            .card {
+                .hi {
+
+                    margin: 10px;
+                    position: relative;
+
+                    h6 {
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 50%;
+                    }
+                }
+
+                .card-body {
+                    .bo {
+                        display: flex;
+
+                        justify-content: space-around;
+
+                    }
+
+                    button {
+                        border: none;
+                        height: 40px;
+                        width: 120px;
+                        border-radius: 10px;
+                        background-color: darkgoldenrod;
+                        color: white;
+
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+/*laptop*/
+@media screen and (min-width:769px) {
+    .admin {
+        display: flex;
+        .bar {
+            display: none;
+        }
+    }
+}
+/* mobile */
+@media screen and (max-width:768px) {
+    .admin {
+        header{
+           margin:0 35px;
+        }
+        .cha1 {
+            display: none;
+        }
+        .cha2 {
+            display: none;
+        }
+        .bar{
+          li{
+            display: flex;
+            justify-content: center;
+          }
+            
+        }
+
+
+
+
+
+    }
+}
